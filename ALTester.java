@@ -1,16 +1,5 @@
 import java.util.ArrayList;
 
-
-/*
-
-QCC
-WHAT ARE "UNSAFE OPERATIONS?"
-*/
-
-/*
-Note: ALTester.java uses unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-*/
 public class ALTester {
   private static ArrayList<Integer> tester = new ArrayList<Integer>();
 
@@ -22,7 +11,7 @@ public class ALTester {
 
   public static void populate(OrderedArrayList oal) {
     for (int i = 0; i < 23; i += 1) {
-      oal.add( (int) (23 * Math.random()) );
+      oal.addLinear( (int) (23 * Math.random()) );
     }
   }
 
