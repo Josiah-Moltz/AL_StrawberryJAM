@@ -1,1 +1,19 @@
-Easier than expected!
+- In ALTester, we need to make two versions of each method (populate() and sorted()) for Ordered Array List and ArrayList<Integer>.
+
+- Methods we don't have to refactor:
+  - toString()
+  - remove()
+  - size()
+  - get()
+  
+- Methods to Refactor:
+  - addLinear()
+  - addBinary()
+  
+- addBinary() is tricky... a lot of trials but many more errors. 
+  - addLinear works fine
+  - when we compile addBinary(), there are no compile errors but it takes a long time to return the array...
+  indicating that it's probably wrong
+  - why does the first element not comply with sorted; i.e. why is it not in order???? 
+  - why do the outputs not change even when we change the code :(((((
+  
