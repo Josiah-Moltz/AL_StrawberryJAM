@@ -63,7 +63,7 @@ public class OrderedArrayList2
   // uses a binary search to find appropriate index
   public void addBinary(Integer newVal)
   {
-    System.out.println(newVal);
+    System.out.println(newVal); //problem with first val
     int start = 0;
     int middle = 0;
     int finish = size() ;
