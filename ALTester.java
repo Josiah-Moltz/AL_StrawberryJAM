@@ -45,11 +45,11 @@ public class ALTester {
   }
 
   public static void main(String[] args) {
-    populate();
+    populate(tester);
     System.out.println(tester);
     System.out.println(sorted(tester));
     for (int i = 0; i < 23; i += 1) {
-      al.set( i, i );
+      tester.set( i, i );
     }
     System.out.println(tester);
     System.out.println(sorted(tester));
