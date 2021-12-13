@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class OrderedArrayList {
-  public ArrayList<Integer> jam;
+  public ArrayList<Integer> _data;
 
   public OrderedArrayList() {
-    jam = new ArrayList<Integer>();
+    _data = new ArrayList<Integer>();
   }
 
   public boolean add(int i) {
@@ -12,23 +12,23 @@ public class OrderedArrayList {
     while (index < size() && i > get(index)) {
       index += 1;
     }
-    jam.add(index, i);
+    _data.add(index, i);
     return true;
   }
 
   public int remove(int index) {
-    return jam.remove(index);
+    return _data.remove(index);
   }
 
   public int get(int index) {
-    return jam.get(index);
+    return _data.get(index);
   }
 
   public int size() {
-    return jam.size();
+    return _data.size();
   }
 
   public String toString() {
-    return jam.toString();
+    return _data.toString();
   }
 }
