@@ -15,4 +15,4 @@
 * size() returns the ArrayList size().
 * get() returns the ArrayList get().
 * addLinear() iterates through _data from left to right to find the location where newVal can be stored. 
-* addBinary() iterates through _data using a binary search using start and finish variables to keep track of the range we are searching in. **DOES NOT WORK**
+* addBinary() iterates through _data using a binary search using start and finish variables to keep track of the range we are searching in. **DOES NOT WORK :(((**
