@@ -63,21 +63,31 @@ public class OrderedArrayList
   // uses a binary search to find appropriate index
   public void addBinary(Integer newVal)
   {
-    System.out.println(newVal); //problem with first val
     int start = 0;
     int middle = 0;
     int finish = size();
-    while ((finish - start) > 1 && size() != 0 ){
-      middle = (start + finish) / 2;
-      if (newVal <= get(middle)){
-        finish = middle;
-      }
-      else {
-        start = middle;
-      }
+
+    int oldMiddle = -1;
+
+    if (finish == 0) {
+      _data.add(0,newVal);
     }
-    _data.add(finish, newVal);
-  }
+    else {
+      while (oldMiddle != middle){
+        oldMiddle = middle;
+
+        middle = (start + finish) / 2;
+
+        if (newVal < get(middle)){
+          finish = middle;
+        }
+        else {
+          start = middle;
+        }// end else
+      }// end while
+      _data.add(finish, newVal);
+    }// end else
+  }// end method
 
   // main method solely for testing purposes
   public static void main( String[] args )
@@ -93,9 +103,6 @@ public class OrderedArrayList
     for( int i = 0; i < 15; i++ )
       Franz.addBinary( (int)( 50 * Math.random() ) );
     System.out.println( Franz );
-    /*-----v-------move-me-down-----------------v--------
-      =====^====================================^=========*/
-
   }//end main()
 
 }//end class OrderedArrayList
